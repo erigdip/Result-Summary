@@ -4,80 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Result Summary</title>
 </head>
 <body>
     <main class="container">
-        <section class="result-component">
-            <div class="result-component-title">
-                <h2>Your result</h2>
-            </div>
-            <div class="result-component-number"></div>
-            <span>76</span>
-            <span>of 100</span>
-            <div class="result-component-status">
-                Great
-            </div>
-            <div class="result-component-paragraph">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ducimus est reprehenderit repellat distinctio dolor.</p>
-            </div>
-        </section>
-        <section class="summary-component">
-            <div class="summary-component-title">
-                <h2>Summary</h2>
-            </div>
-            <div class="summary-component-list">
-                <div class="reaction">
-                    <div class="reaction-icon">
-                        <img src="/assets/images/icon-reaction.svg" alt="icon-reaction">
-                    </div>
-                    <div class="reaction-title">
-                        <p>Reaction</p>
-                    </div>
-                    <div class="reaction-status">
-                        <p>80/100</p>
+
+        <div class="container-section">
+            
+            <section class="result-component" id="bg-color">
+                <div class="result-component-title">
+                    <h2>Your result</h2>
+                </div>
+                <div class="result-component-numbers">
+                    <div class="numbers" id="bg-result-color">
+                        <span id="Result">76</span>
+                        <span>of 100</span>
                     </div>
                 </div>
-                <div class="memory">
-                    <div class="memory-icon">
-                        <img src="/assets/images/icon-memory.svg" alt="icon-memory">
-                    </div>
-                    <div class="memory-title">
-                        <p>Memory</p>
-                    </div>
-                    <div class="memory-status">
-                        <p>92/100</p>
+                <div class="result-component-status">
+                    <div class="status" id="Status">
+                        Great
                     </div>
                 </div>
-                <div class="verbal">
-                    <div class="verbal-icon">
-                        <img src="/assets/images/icon-verbal.svg" alt="icon-verbal">
+                <div class="result-component-paragraph">
+                    <p>You scored <span id="comparison-t">higher</span> than <span id="comparison-n">65</span>% of the people who has taken these tests.</p>
+                </div>
+            </section>
+    
+            <section class="summary-component">
+                <div class="summary-component-title">
+                    <h2>Summary</h2>
+                </div>
+                <div class="summary-component-list">
+                    <div class="reaction">
+                        <div class="reaction-icon-title">
+                            <img src="/assets/images/icon-reaction.svg" alt="icon-reaction">
+                            <div class="reaction-title">
+                                <p>Reaction</p>
+                            </div>
+                        </div>
+                        <div class="reaction-status">
+                            <p><b id="reVal">80</b> / 100</p>
+                        </div>
                     </div>
-                    <div class="verbal-title">
-                        <p>Verbal</p>
+                    <div class="memory">
+                        <div class="memory-icon-title">
+                            <img src="/assets/images/icon-memory.svg" alt="icon-memory">
+                            <div class="memory-title">
+                                <p>Memory</p>
+                            </div>
+                        </div>
+                        <div class="memory-status">
+                            <p><b id="meVal">92</b> / 100</p>
+                        </div>
                     </div>
-                    <div class="verbal-status">
-                        <p>61/100</p>
+                    <div class="verbal">
+                        <div class="verbal-icon-title">
+                            <img src="/assets/images/icon-verbal.svg" alt="icon-verbal">
+                            <div class="verbal-title">
+                                <p>Verbal</p>
+                            </div>
+                        </div>
+                        <div class="verbal-status">
+                            <p><b id="veVal">61</b> / 100</p>
+                        </div>
+                    </div>
+                    <div class="visual">
+                        <div class="visual-icon-title">
+                            <img src="/assets/images/icon-visual.svg" alt="icon-visual">
+                            <div class="visual-title">
+                                <p>Visual</p>
+                            </div>
+                        </div>
+                        <div class="visual-status">
+                            <p><b id="viVal">72</b> / 100</p>
+                        </div>
                     </div>
                 </div>
-                <div class="visual">
-                    <div class="visual-icon">
-                        <img src="/assets/images/icon-visual.svg" alt="icon-visual">
-                    </div>
-                    <div class="visual-title">
-                        <p>Visual</p>
-                    </div>
-                    <div class="visual-status">
-                        <p>72/100</p>
-                    </div>
+                <div class="summary-component-button">
+                    <button class="button" id="ButtonBox">
+                        Continue
+                    </button>
                 </div>
-            </div>
-            <div class="summary-component-button">
-                <button class="button">
-                    Continue
-                </button>
-            </div>
-        </section>
+            </section>
+
+        </div>
+
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+section.result-component {
+    width: inherit;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: inherit;
+    background-image: linear-gradient(to bottom, #6743ff, 50%, #312ce9);
+}
+
+.result-component-title h2 {
+    margin: 0;
+    color: #d4c6ff;
+}
+
+.result-component-numbers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbers {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4b23c9, 30%, #312ce9);
+    color: #d9a9fd;
+    font-weight: bold;
+}
+
+.numbers span:nth-child(1) {
+    font-family: "Rubik";
+    font-size: 68px;
+    font-weight: 600;
+    color: #fffffd;
+}
+
+.result-component-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.result-component-status .status {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.result-component-paragraph {
+    display: flex;
+    justify-content: center;
+}
+
+.result-component-paragraph p {
+    width: 75%;
+    margin: 0;
+    color: #c4c4ff;
+    font-family: 'Rubik';
+    line-height: 22px;
+}
+
+@media (max-width: 425px) {
+
+    .result-component-title h2 {
+        margin: 0;
+        color: #d4c6ff;
+        font-size: large;
+    }
+
+    section.result-component {
+        width: auto;
+        padding: 15px 0 35px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        gap: 20px;
+        background-image: linear-gradient(to bottom, #6743ff, 50% #312ce9);
+    }
+
+    .numbers {
+        padding: 30px;
+        width: 75px;
+        height: 75px;
+        background-image: linear-gradient(to bottom, #4b23c9, 30%, #312ce9);
+        color: #847bff;
+        font-size: large;
+    }
+
+    .numbers span:nth-child(1) {
+        font-family: "Rubik";
+        font-size: 55px;
+        font-weight: 600;
+        color: #fffffd;
+    }
+
+    .result-component-status {
+        margin-top: 10px;
+    }
+
+    .result-component-status .status {
+        font-size: 1.5rem;
+    }
+
+}
