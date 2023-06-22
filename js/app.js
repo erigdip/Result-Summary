@@ -47,12 +47,12 @@ if (resultValue >= 75){
     Bcolor.style.backgroundImage = 'linear-gradient(180deg, hsl(33deg 100% 51%) 0%, hsl(31deg 97% 50%) 11%, hsl(30deg 98% 49%) 22%, hsl(28deg 99% 47%) 33%, hsl(26deg 99% 46%) 44%, hsl(24deg 100% 45%) 56%, hsl(22deg 100% 44%) 67%, hsl(20deg 100% 43%) 78%, hsl(17deg 100% 42%) 89%, hsl(13deg 100% 41%) 100%)';
     Rcolor.style.backgroundImage = 'linear-gradient(180deg, hsl(33deg 100% 51%) 0%, hsl(31deg 97% 50%) 11%, hsl(30deg 98% 49%) 22%, hsl(28deg 99% 47%) 33%, hsl(26deg 99% 46%) 44%, hsl(24deg 100% 45%) 56%, hsl(22deg 100% 44%) 67%, hsl(20deg 100% 43%) 78%, hsl(17deg 100% 42%) 89%, hsl(13deg 100% 41%) 100%)';
     Tcomparison.innerText = 'lower';
-    Ncomparison.innerHTML = parseInt((Math.random() * 25) + 75);
+    Ncomparison.innerHTML = parseInt((Math.random() * 25) + 50);
 } else if (resultValue < 25){
     showStatus.innerHTML = 'Critical';
     Bcolor.style.backgroundImage = 'linear-gradient(180deg, hsl(13deg 100% 51%) 0%, hsl(12deg 97% 49%) 11%, hsl(12deg 97% 48%) 22%, hsl(11deg 98% 46%) 33%, hsl(10deg 98% 45%) 44%, hsl(9deg 99% 43%) 56%, hsl(7deg 99% 42%) 67%, hsl(5deg 99% 40%) 78%, hsl(3deg 100% 39%) 89%, hsl(0deg 100% 37%) 100%)';
     Rcolor.style.backgroundImage = 'linear-gradient(180deg, hsl(13deg 100% 51%) 0%, hsl(12deg 97% 49%) 11%, hsl(12deg 97% 48%) 22%, hsl(11deg 98% 46%) 33%, hsl(10deg 98% 45%) 44%, hsl(9deg 99% 43%) 56%, hsl(7deg 99% 42%) 67%, hsl(5deg 99% 40%) 78%, hsl(3deg 100% 39%) 89%, hsl(0deg 100% 37%) 100%)';
     Tcomparison.innerText = 'lower';
-    Ncomparison.innerHTML = parseInt(Math.random() * 50);
+    Ncomparison.innerHTML = parseInt((Math.random() * 25) + 75);
 }
 }
